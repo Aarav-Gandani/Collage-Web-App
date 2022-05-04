@@ -1,0 +1,49 @@
+<html>
+    <head>
+       <title>Collage Web App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"> </script>
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href="" id="link" download="my_selfie_jpeg"> </a>
+        <h1>Collage Web App!
+        </h1>
+        <hr>
+        <h3 style="color:lime;" id="story"> Happy Kids school has an annual function where they want to keep an application that takes selfies on voice command and makes a collage out of it.</h3>
+        <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command,</h4>
+        
+        <div class="form-group">
+            <h3>say "Cheese"</h3>
+            <label>Your voice output : </label>
+<textarea class="form-control" id="text_box" readonly="true"></textarea>
+        </div>
+<button class="btn btn-primary" onclick="start()"> Start speaking </button>
+        <p>Press the Start button</p>
+
+        <label>Your webcam : </label>
+<div id="camera">  </div>
+        <br>
+
+        <label>Your Selfies Will Be Displayed Here: </label>
+<div id="resultShow">
+ <div id="result1"> <img id="img1" src=""> </div>
+ <div id="result2">  <img id="img2" src=""> </div>
+ <div id="result3">  <img id="img3" src=""> </div>   
+</div>
+    </center>
+    </div>
+<hr>
+<div id="creation"> Created by Aarav Gandani </div>
+<div> <img id="me" src="20160821_145922.jpg"> </div> 
+<hr id="line">   
+<script src="main.js"></script>
+</body>
+</html>
